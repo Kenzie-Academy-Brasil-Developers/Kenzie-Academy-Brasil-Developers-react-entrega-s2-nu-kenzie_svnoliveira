@@ -1,3 +1,4 @@
+import { StyledButton } from "../fragments/buttons/StyledButtons"
 import { Title1 } from "../fragments/typography/Title1"
 import { Title2 } from "../fragments/typography/Title2"
 import { Title3 } from "../fragments/typography/Title3"
@@ -16,7 +17,7 @@ export const Form = () => {
                 <option value="positive">Entrada</option>
                 <option value="negative">Saída</option>
             </select>
-            <button type="submit">Inserir valor</button>
+            <StyledButton mode="main" type="submit">Inserir valor</StyledButton>
         </form>
     )
 }
