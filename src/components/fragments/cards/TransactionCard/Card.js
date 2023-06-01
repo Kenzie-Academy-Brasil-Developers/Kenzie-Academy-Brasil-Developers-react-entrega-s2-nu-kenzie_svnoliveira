@@ -12,7 +12,7 @@ export const Card = styled.li`
     border-radius: 0.4rem;
 
     .card-shadow > div {
-        width: 95vw;
+        width: min(35.5rem, 56rem);
         min-height: 8.7rem;
         padding: 0.8rem 1.8rem;
         display: flex;

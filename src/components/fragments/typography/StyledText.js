@@ -55,6 +55,14 @@ export const StyledText = css`
             `
         }
     }}
+
+    ${({color}) => {
+        if (color === "grey"){
+            return css`
+                color: var(--grey-3);
+            `
+        }
+    }}
 `
 
 export  const Text = styled.span`
