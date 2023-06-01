@@ -3,20 +3,24 @@ import styled from "styled-components";
 export const Card = styled.li`
     box-shadow: -4px 0px 0px 0px ${({transaction}) => transaction === "positive"?"rgba(3,184,152,1)": "rgba(233, 236, 239,1)"};
     margin: auto;
-    width: min(96vw, 35.5rem);
+    width: 100%;
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     border-radius: 0.4rem;
 
+    .card-shadow {
+        width: 100%;
+        background-color: var(--grey-1);
+    }
     .card-shadow > div {
-        width: min(35.5rem, 56rem);
         min-height: 8.7rem;
         padding: 0.8rem 1.8rem;
         display: flex;
         flex-direction: column;
+        width: 100%;
         justify-content: space-around;
     }
 
@@ -33,5 +37,14 @@ export const Card = styled.li`
     &:hover .card-button {
         background-color: var(--grey-4);
         color: var(--grey-2);
+    }
+    
+    @media (min-width: 770px){
+        .card-shadow{
+            display: flex;
+        }
+        .card-footer {
+            align-items: flex-end;
+        }
     }
 `

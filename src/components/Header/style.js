@@ -8,11 +8,17 @@ export const StyledHeader = styled.header`
     margin-bottom: clamp(3rem, 6vw, 4rem);
 
     #header-container {
-        width: min(96vw, 98rem);
+        width: min(35.5rem, 96%);
         margin: auto;
     }
-
+    
     img {
         width: clamp(11.3rem, 20vw, 12.2rem);
+    }
+    
+    @media (min-width: 770px){
+        #header-container {
+            width: min(96vw, 98rem);
+        }
     }
 `
