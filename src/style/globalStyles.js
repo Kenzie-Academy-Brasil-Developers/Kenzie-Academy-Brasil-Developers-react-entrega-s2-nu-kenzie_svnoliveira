@@ -28,5 +28,8 @@ export const GlobalStyle = createGlobalStyle`
             gap: 2rem;
         }
 
+        #end {
+            min-height: 3.5rem;
+        }
     }
 `

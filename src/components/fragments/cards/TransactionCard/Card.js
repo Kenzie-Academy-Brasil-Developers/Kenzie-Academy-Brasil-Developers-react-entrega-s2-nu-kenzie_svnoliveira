@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const Card = styled.li`
     box-shadow: -4px 0px 0px 0px ${({transaction}) => transaction === "positive"?"rgba(3,184,152,1)": "rgba(233, 236, 239,1)"};
     margin: auto;
-    width: 95%;
+    width: min(96vw, 35.5rem);
     display: flex;
     flex-wrap: wrap;
     flex-direction: row;
