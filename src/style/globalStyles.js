@@ -11,9 +11,25 @@ export const GlobalStyle = createGlobalStyle`
         --grey-2: #E9ECEF;
         --grey-3: #868E96;
         --grey-4: #212529;
-    }
+        
+        
+        main {
+            margin: auto;
+            width: min(96vw, 98rem);
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-evenly;
+        }
 
-    body {
-        background-color: var(--grey-1);
+        #left-container {
+            display: flex;
+            flex-direction: column;
+            gap: 2rem;
+        }
+
+        #end {
+            min-height: 3.5rem;
+        }
     }
 `

@@ -12,9 +12,14 @@ export const App = () => {
       <Reset />
       <GlobalStyle />
       <Header />
-      <Form />
-      <TotalMoney />
-      <List />
+      <main>
+        <section id="left-container">
+          <Form />
+          <TotalMoney />
+        </section>
+        <List />
+      </main>
+      <div id="end"></div>
     </>
   )
 }

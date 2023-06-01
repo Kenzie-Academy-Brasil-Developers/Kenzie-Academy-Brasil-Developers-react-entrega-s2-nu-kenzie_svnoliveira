@@ -1,22 +1,25 @@
-import { Title1 } from "../fragments/typography/Title1"
-import { Title2 } from "../fragments/typography/Title2"
-import { Title3 } from "../fragments/typography/Title3"
+import { StyledButton } from "../fragments/buttons/StyledButtons"
+import { StyledInputs, StyledSelect } from "../fragments/inputs/StyledInputs"
+import { Body } from "../fragments/typography/Body"
+// import { Title2 } from "../fragments/typography/Title2"
+// import { Title3 } from "../fragments/typography/Title3"
 import { Title4 } from "../fragments/typography/Title4"
+import { StyledForm } from "./style"
 
 export const Form = () => {
     return (
-        <form>
-            <Title1 >descrição</Title1>
-            <input type="text" placeholder="Digite sua descrição" required />
-            <Title2>Ex: Compras de Roupas</Title2>
-            <Title3>Valor (R$)</Title3>
-            <input type="number" required />
+        <StyledForm>
+            <Title4 >Descrição</Title4>
+            <StyledInputs type="text" placeholder="Digite sua descrição" required />
+            <Body>Ex: Compras de Roupas</Body>
+            <Title4>Valor (R$)</Title4>
+            <StyledInputs type="number" placeholder="1" required />
             <Title4>Tipo de Valor</Title4>
-            <select name="transaction-type" id="transaction-type">
+            <StyledSelect name="transaction-type" id="transaction-type">
                 <option value="positive">Entrada</option>
                 <option value="negative">Saída</option>
-            </select>
-            <button type="submit">Inserir valor</button>
-        </form>
+            </StyledSelect>
+            <StyledButton mode="main" type="submit">Inserir valor</StyledButton>
+        </StyledForm>
     )
 }

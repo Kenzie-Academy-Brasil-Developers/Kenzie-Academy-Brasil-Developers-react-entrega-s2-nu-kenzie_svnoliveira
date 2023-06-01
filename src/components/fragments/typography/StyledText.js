@@ -55,6 +55,18 @@ export const StyledText = css`
             `
         }
     }}
+
+    ${({color}) => {
+        if (color === "grey"){
+            return css`
+                color: var(--grey-3);
+            `
+        } else if (color === "pink"){
+            return css`
+                color: var(--color-primary);
+            `
+        }
+    }}
 `
 
 export  const Text = styled.span`
