@@ -1,11 +1,16 @@
+import { Body } from "../fragments/typography/Body"
+import { Title3 } from "../fragments/typography/Title3"
+import { StyledSection } from "./style"
+import { StyledPrice } from "../fragments/typography/StyledPrice"
+
 export const TotalMoney = () => {
     return (
-        <section>
+        <StyledSection>
             <div className="header">
-                <h2>valor total</h2>
-                <span>R$ 8,000</span>
+                <Title3>valor total</Title3>
+                <StyledPrice>R$ 8,000</StyledPrice>
             </div>
-            <span>Valor se refere ao saldo</span>
-        </section>
+            <Body>Valor se refere ao saldo</Body>
+        </StyledSection>
     )
 }

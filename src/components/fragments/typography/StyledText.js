@@ -61,6 +61,10 @@ export const StyledText = css`
             return css`
                 color: var(--grey-3);
             `
+        } else if (color === "pink"){
+            return css`
+                color: var(--color-primary);
+            `
         }
     }}
 `
