@@ -12,8 +12,4 @@ export const GlobalStyle = createGlobalStyle`
         --grey-3: #868E96;
         --grey-4: #212529;
     }
-
-    body {
-        background-color: var(--grey-1);
-    }
 `
