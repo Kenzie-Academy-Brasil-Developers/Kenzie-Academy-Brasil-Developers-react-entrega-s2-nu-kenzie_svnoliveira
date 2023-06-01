@@ -1,13 +1,17 @@
+import { Title1 } from "../fragments/typography/Title1"
+import { Title2 } from "../fragments/typography/Title2"
+import { Title3 } from "../fragments/typography/Title3"
+import { Title4 } from "../fragments/typography/Title4"
 
 export const Form = () => {
     return (
         <form>
-            <span>descrição</span>
+            <Title1 >descrição</Title1>
             <input type="text" placeholder="Digite sua descrição" required />
-            <span>Ex: Compras de Roupas</span>
-            <span>Valor (R$)</span>
+            <Title2>Ex: Compras de Roupas</Title2>
+            <Title3>Valor (R$)</Title3>
             <input type="number" required />
-            <span>Tipo de Valor</span>
+            <Title4>Tipo de Valor</Title4>
             <select name="transaction-type" id="transaction-type">
                 <option value="positive">Entrada</option>
                 <option value="negative">Saída</option>
