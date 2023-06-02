@@ -9,7 +9,6 @@ import { Reset } from "./style/reset"
 export const App = () => {
 
   const [transactionList, setTransactionList] = useState([])
-  console.log(transactionList)
   return (
     <>
       <link href="https://fonts.googleapis.com/css2?family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet"></link>

@@ -7,7 +7,7 @@ export const TransactionCard = ({transaction, removeTransactionFromList}) => {
     let typeText = ""
     transaction.transactionType === "positive" ? typeText="Entrada" : typeText ="Despesa"
 
-    const ammount = parseFloat(transaction.ammount).toLocaleString('pt-BR', {currency: 'BRL', style: 'currency'});
+    const ammount = parseFloat(transaction.ammount).toLocaleString('pt-BR', {currency: 'BRL', style: 'currency'})
 
     return (
         <Card className="card-container" transaction={transaction.transactionType}>
